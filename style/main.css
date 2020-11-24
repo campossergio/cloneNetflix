@@ -3,6 +3,7 @@
     --preto: #141414;
 }
 
+/* ELEMENTOS BASE */
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +13,10 @@
 body {
     background: var(--preto);
     font-family:  'Times New Roman', 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
 }
 
+/* CABEÇALHO */
 header .container {
     display: flex;
     flex-direction: row;
@@ -36,4 +39,35 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/* ELEMENTOS DO FILME PRINCIPAL */ 
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/strangerThings.jpg');
+
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* elementos iniciando da esquerda */
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+/* estilo do botão */
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    
 }
